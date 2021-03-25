@@ -1,0 +1,10 @@
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+
+li{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(194, 100, 45);
+    font-style: italic;
+}
