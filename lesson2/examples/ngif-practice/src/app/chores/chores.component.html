@@ -1,4 +1,4 @@
-<div class="chores">
+<div class="chores" *ngIf = "chores.length > finishedChores.length; ">
     <h3>Chores</h3>
     <ul>
         <li *ngFor = 'let chore of chores'>{{chore}}</li>
