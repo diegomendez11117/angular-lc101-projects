@@ -55,7 +55,6 @@ export class CandidatesComponent implements OnInit {
   }
 
   changeMissionName(newMissionName: string) {
-    debugger;
     this.missionName = newMissionName;
   }
 }

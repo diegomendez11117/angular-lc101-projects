@@ -2,14 +2,8 @@
   <h2
     class="centered"
     *ngIf="!editMissionName; else editMission"
-    (click)="editMissionName = false"
+    (click)="editMissionName = true"
   >
-    <input
-      #newName
-      (keyup.enter)="changeMissionName(newName.value)"
-      type="text"
-      placeholder= "Type Mission Name here"
-    />
     Mission Name: {{ missionName }}
   </h2>
 
@@ -68,6 +62,11 @@
   <h2 class="centered">
     Mission Name:
     <!-- Add a keyup.enter event that calls the changeMissionName function. -->
-    <input #newName type="text" />
+    <input
+      #newName
+      (keyup.enter)="changeMissionName(newName.value); editMissionName = false"
+      type="text"
+      placeholder="Type Mission Name here"
+    />
   </h2>
 </ng-template>
