@@ -42,7 +42,7 @@ export class CandidatesComponent implements OnInit {
 
   ngOnInit() {}
 
-  addToCrew(newCrew) {
+  addToCrew(newCrew):void {
     if (this.crews.length === 0) this.crews.push(newCrew);
     if (!this.crews.includes(newCrew)) {
       this.crews.push(newCrew);
@@ -50,11 +50,15 @@ export class CandidatesComponent implements OnInit {
     console.log(this.crews, newCrew);
   }
 
-  deleteCrew() {
+  deleteCrew():void {
     this.crews = [];
   }
 
   changeMissionName(newMissionName: string) {
     this.missionName = newMissionName;
+  }
+
+  removeMember(member: any):any {
+
   }
 }
